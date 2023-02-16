@@ -8,33 +8,37 @@ modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
 loaderVersion="[35,)" #mandatory (28 is current forge version)
 # A URL to refer people to when problems occur with this mod
-issueTrackerURL="http://my.issue.tracker/" #optional
+issueTrackerURL="https://github.com/yoshisman8/ars-armiger/issues" #optional
 
 license="GNU Lesser General Public License v3.0"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="an_addon" #mandatory
+modId="ars_armiger" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="Example Ars Nouveau Addon" #mandatory
+displayName="Ars Armiger" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="http://example.com/" #optional
+displayURL="https://github.com/yoshisman8/ars-armiger" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks for this example mod goes to Java" #optional
+credits="Thanks to the Ars Nouveau community for the boilerplate" #optional
 # A text field displayed in the mod UI
-authors="Love, Cheese and small house plants" #optional
+authors="Vyklade" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Starbuncles will conquer the world
+A mod that adds cross-mod compatibility between Ars Nouveau and Tetra.
+Featuring:
+• New materials
+• New effects
+• Spell Delivering augment for Melee weapons
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.an_addon]] #optional
+[[dependencies.ars_armiger]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -46,23 +50,29 @@ Starbuncles will conquer the world
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.an_addon]]
+[[dependencies.ars_armiger]]
     modId="patchouli"
     mandatory=true
     versionRange="[1.18.1-61,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.an_addon]]
+[[dependencies.ars_armiger]]
     modId="curios"
     mandatory=true
     versionRange="[1.18.1-5.0.3.0,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.an_addon]]
+[[dependencies.ars_armiger]]
     modId="ars_nouveau"
     mandatory=true
     versionRange="[2.5.0,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.ars_armiger]]
+    modId="tetra"
+    mandatory=true
+    versionRange="[5,]"
     ordering="AFTER"
     side="BOTH"

@@ -1,4 +1,4 @@
-package com.example.an_addon;
+package com.vyklade.arsarmiger;
 
 import com.example.an_addon.glyphs.TestEffect;
 import com.hollingsworth.arsnouveau.api.ArsNouveauAPI;

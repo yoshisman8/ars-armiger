@@ -1,4 +1,4 @@
-package com.example.an_addon.glyphs;
+package com.vyklade.arsarmiger.glyphs;
 
 import com.hollingsworth.arsnouveau.api.spell.*;
 import com.hollingsworth.arsnouveau.common.spell.augment.AugmentAmplify;

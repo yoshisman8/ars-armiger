@@ -1,4 +1,4 @@
-package com.example.an_addon.datagen;
+package com.vyklade.arsarmiger.datagen;
 
 import com.example.an_addon.ArsNouveauRegistry;
 import com.example.an_addon.ExampleANAddon;

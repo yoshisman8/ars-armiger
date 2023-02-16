@@ -1,0 +1,18 @@
+{
+    "tetra.material.magebloom_fiber": "Magebloom",
+    "tetra.material.magebloom_fiber.prefix": "Magebloom",
+    "tetra.material.source_gem": "Source Gem",
+    "tetra.material.source_gem.prefix": "Source",
+    "tetra.improvement.source_leech.name": "Source Leech",
+    "tetra.improvement.source_leech.description": "Dealing damage with this weapon leeches §d5 Mana§r per level of this ability.",
+    "tetra.variant.single_socket/socket_source_gem": "Socket [§dSource Gem§r]",
+    "tetra.variant.sword_socket/socket_source_gem": "Socket [§dSource Gem§r]",
+    "tetra.variant.double_socket/socket_source_gem": "Socket [§dSource Gem§r]",
+    "tetra.stats.source_leech": "Source Leech",
+    "tetra.stats.source_leech.tooltip": "Dealing damage with this weapon leeches §d5 Mana§r per level of this ability.",
+    "tetra.stats.source_leech.tooltip_short": "Dealing damage with this weapon leeches §d5 Mana§r per level of this ability.",
+    "tetra.stats.spellstrike": "Spellstrike",
+    "tetra.stats.spellstrike.tooltip": "Spellstriking weapons cast an inscribed spell on the target struck.",
+    "tetra.stats.spellstrike.tooltip_short": "Spellstriking weapons cast a spell on the target struck.",
+    "tetra.tooltips.inscribable": "Can be inscribed with a spell at a §dScribe's Table§r."
+}

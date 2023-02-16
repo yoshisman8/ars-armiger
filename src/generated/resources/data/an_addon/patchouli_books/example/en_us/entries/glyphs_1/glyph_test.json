@@ -1,15 +1,15 @@
 {
   "category": "ars_nouveau:glyphs_1",
-  "icon": "an_addon:glyph_test",
-  "name": "an_addon.glyph_name.glyph_test",
+  "icon": "ars_armiger:glyph_test",
+  "name": "ars_armiger.glyph_name.glyph_test",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "an_addon.glyph_desc.glyph_test"
+      "text": "ars_armiger.glyph_desc.glyph_test"
     },
     {
       "type": "ars_nouveau:glyph_recipe",
-      "recipe": "an_addon:glyph_test"
+      "recipe": "ars_armiger:glyph_test"
     }
   ],
   "sortnum": 2

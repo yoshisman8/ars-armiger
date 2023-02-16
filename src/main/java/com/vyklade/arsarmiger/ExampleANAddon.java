@@ -1,4 +1,4 @@
-package com.example.an_addon;
+package com.vyklade.arsarmiger;
 
 import com.example.an_addon.registry.ModRegistry;
 import net.minecraft.resources.ResourceLocation;
@@ -14,14 +14,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ExampleANAddon.MODID)
-public class ExampleANAddon
+@Mod(ArsArmiger.MODID)
+public class ArsArmiger
 {
-    public static final String MODID = "an_addon";
+    public static final String MODID = "ars_armiger";
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public ExampleANAddon() {
+    public ArsArmiger() {
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         ModRegistry.registerRegistries(modbus);
         ArsNouveauRegistry.registerGlyphs();

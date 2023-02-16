@@ -1,4 +1,4 @@
-package com.example.an_addon.registry;
+package com.vyklade.arsarmiger.registry;
 
 import com.example.an_addon.item.ExampleCosmetic;
 import com.hollingsworth.arsnouveau.ArsNouveau;
