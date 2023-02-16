@@ -1,8 +1,8 @@
 package com.vyklade.arsarmiger.datagen;
 
-import com.example.an_addon.ArsNouveauRegistry;
-import com.example.an_addon.ExampleANAddon;
-import com.example.an_addon.glyphs.TestEffect;
+import com.vyklade.arsarmiger.ArsNouveauRegistry;
+import com.vyklade.arsarmiger.ArsArmiger;
+import com.vyklade.arsarmiger.glyphs.TestEffect;
 import com.hollingsworth.arsnouveau.api.enchanting_apparatus.EnchantingApparatusRecipe;
 import com.hollingsworth.arsnouveau.api.familiar.AbstractFamiliarHolder;
 import com.hollingsworth.arsnouveau.api.ritual.AbstractRitual;
@@ -31,7 +31,7 @@ import static com.hollingsworth.arsnouveau.api.RegistryHelper.getRegistryName;
 
 public class ArsProviders {
 
-    static String root = ExampleANAddon.MODID;
+    static String root = ArsArmiger.MODID;
 
     public static class GlyphProvider extends GlyphRecipeProvider {
 
@@ -157,12 +157,14 @@ public class ArsProviders {
         }
 
         @Override
-        public void addBasicItem(ItemLike item, ResourceLocation category, IPatchouliPage recipePage){
+        public PatchouliPage addBasicItem(ItemLike item, ResourceLocation category, IPatchouliPage recipePage){
             PatchouliBuilder builder = new PatchouliBuilder(category, item.asItem().getDescriptionId())
                     .withIcon(item.asItem())
                     .withPage(new TextPage(root + ".page." + getRegistryName(item.asItem()).getPath()))
                     .withPage(recipePage);
-            this.pages.add(new PatchouliPage(builder, getPath(category, getRegistryName(item.asItem()).getPath())));
+            PatchouliPage page = new PatchouliPage(builder, getPath(category, getRegistryName(item.asItem()).getPath()));
+            this.pages.add(page);
+            return page;
         }
 
         public void addFamiliarPage(AbstractFamiliarHolder familiarHolder) {
@@ -170,7 +172,8 @@ public class ArsProviders {
                     .withIcon(root + ":" + familiarHolder.getRegistryName().getPath())
                     .withTextPage(root + ".familiar_desc." + familiarHolder.getRegistryName().getPath())
                     .withPage(new EntityPage(familiarHolder.getRegistryName().toString()));
-            this.pages.add(new PatchouliPage(builder, getPath(FAMILIARS, familiarHolder.getRegistryName().getPath())));
+            PatchouliPage page = new PatchouliPage(builder, getPath(FAMILIARS, familiarHolder.getRegistryName().getPath()));
+            this.pages.add(page);
         }
 
         public void addRitualPage(AbstractRitual ritual) {
@@ -178,8 +181,8 @@ public class ArsProviders {
                     .withIcon(ritual.getRegistryName().toString())
                     .withTextPage(ritual.getDescriptionKey())
                     .withPage(new CraftingPage("ars_elemental:tablet_" + ritual.getRegistryName().getPath()));
-
-            this.pages.add(new PatchouliPage(builder, getPath(RITUALS, ritual.getRegistryName().getPath())));
+            PatchouliPage page = new PatchouliPage(builder, getPath(RITUALS, ritual.getRegistryName().getPath()));
+            this.pages.add(page);
         }
 
         public void addEnchantmentPage(Enchantment enchantment) {
@@ -190,7 +193,8 @@ public class ArsProviders {
             for (int i = enchantment.getMinLevel(); i <= enchantment.getMaxLevel(); i++) {
                 builder.withPage(new EnchantingPage("ars_nouveau:" + getRegistryName(enchantment).getPath() + "_" + i));
             }
-            this.pages.add(new PatchouliPage(builder, getPath(ENCHANTMENTS, getRegistryName(enchantment).getPath())));
+            PatchouliPage page = new PatchouliPage(builder, getPath(ENCHANTMENTS, getRegistryName(enchantment).getPath()));
+            this.pages.add(page);
         }
 
         public void addGlyphPage(AbstractSpellPart spellPart) {
@@ -205,7 +209,8 @@ public class ArsProviders {
                     .withSortNum(spellPart instanceof AbstractCastMethod ? 1 : spellPart instanceof AbstractEffect ? 2 : 3)
                     .withPage(new TextPage(root + ".glyph_desc." + spellPart.getRegistryName().getPath()))
                     .withPage(new GlyphScribePage(spellPart));
-            this.pages.add(new PatchouliPage(builder, getPath(category, spellPart.getRegistryName().getPath())));
+            PatchouliPage page =  new PatchouliPage(builder, getPath(category, spellPart.getRegistryName().getPath()));
+            this.pages.add(page);
         }
 
         /**

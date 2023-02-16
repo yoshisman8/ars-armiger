@@ -1,6 +1,6 @@
 package com.vyklade.arsarmiger;
 
-import com.example.an_addon.glyphs.TestEffect;
+import com.vyklade.arsarmiger.glyphs.TestEffect;
 import com.hollingsworth.arsnouveau.api.ArsNouveauAPI;
 import com.hollingsworth.arsnouveau.api.spell.AbstractSpellPart;
 

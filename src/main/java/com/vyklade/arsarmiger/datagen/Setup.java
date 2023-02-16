@@ -1,12 +1,12 @@
 package com.vyklade.arsarmiger.datagen;
 
-import com.example.an_addon.ExampleANAddon;
+import com.vyklade.arsarmiger.ArsArmiger;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = ExampleANAddon.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = ArsArmiger.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Setup {
 
     //use runData configuration to generate stuff, event.includeServer() for data, event.includeClient() for assets

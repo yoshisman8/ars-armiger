@@ -1,6 +1,6 @@
 package com.vyklade.arsarmiger.registry;
 
-import com.example.an_addon.item.ExampleCosmetic;
+import com.vyklade.arsarmiger.item.ExampleCosmetic;
 import com.hollingsworth.arsnouveau.ArsNouveau;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -9,7 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static com.example.an_addon.ExampleANAddon.MODID;
+import static com.vyklade.arsarmiger.ArsArmiger.MODID;
 
 public class ModRegistry {
 

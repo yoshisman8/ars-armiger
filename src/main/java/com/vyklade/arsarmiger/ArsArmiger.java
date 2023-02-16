@@ -1,6 +1,6 @@
 package com.vyklade.arsarmiger;
 
-import com.example.an_addon.registry.ModRegistry;
+import com.vyklade.arsarmiger.registry.ModRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
