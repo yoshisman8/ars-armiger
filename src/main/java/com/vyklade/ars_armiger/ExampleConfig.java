@@ -1,4 +1,4 @@
-package com.vykade.arsarmiger;
+package com.vyklade.ars_armiger;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
