@@ -27,7 +27,7 @@
     "material": {
         "items": [ "ars_nouveau:source_gem_block" ]
     },
-    "improvements": {
+    "effects": {
         "source_leech": 2
     },
     "requiredTools": {

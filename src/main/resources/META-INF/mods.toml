@@ -24,7 +24,7 @@ displayName="Ars Armiger" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://github.com/yoshisman8/ars-armiger" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+logoFile="ars_armiger_logo.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks to the Ars Nouveau community for the boilerplate" #optional
 # A text field displayed in the mod UI
@@ -33,9 +33,9 @@ authors="Vyklade" #optional
 description='''
 A mod that adds cross-mod compatibility between Ars Nouveau and Tetra.
 Featuring:
-• New materials
-• New effects
-• Spell Delivering augment for Melee weapons
+• New Materials
+• New Effects
+• New Improvements for all Melee weapons
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.ars_armiger]] #optional

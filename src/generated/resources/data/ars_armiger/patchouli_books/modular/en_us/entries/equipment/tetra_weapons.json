@@ -1,0 +1,29 @@
+{
+  "category": "ars_nouveau:equipment",
+  "icon": "tetra:modular_sword{\"sword/basic_blade_material\":\"basic_blade/source_gem\",\"sword/basic_hilt_material\":\"basic_hilt/stick\",\"sword/blade\":\"sword/basic_blade\",\"sword/decorative_pommel\":\"decorative_pommel/gold\",\"sword/guard\":\"sword/makeshift_guard\",\"sword/hilt\":\"sword/basic_hilt\",\"sword/makeshift_guard_material\":\"makeshift_guard/gold\",\"sword/pommel\":\"sword/decorative_pommel\",\"sword/blade:spellstrike\":1}",
+  "name": "ars_armiger.page.tetra_weapons",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tetra:holo{\"id\":\"9503de92-046c-4d61-8afe-8c0d71c6afae\",\"holo/core\":\"holo/core\",\"holo/core_material\":\"core/dim\",\"holo/frame\":\"holo/frame\",\"holo/frame_material\":\"frame/ancient\"}",
+      "text": "ars_armiger.page.tetra_weapons.page1.body",
+      "title": "ars_armiger.page.tetra_weapons"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tetra:modular_double{\"double/adze_left_material\":\"adze/source_gem\",\"double/basic_handle_material\":\"basic_handle/archwood\",\"double/binding\":\"double/binding\",\"double/binding_material\":\"double_binding/blaze_fiber\",\"double/butt_right_material\":\"butt/source_gem\",\"double/handle\":\"double/basic_handle\",\"double/head_left\":\"double/adze_left\",\"double/head_right\":\"double/butt_right\",\"double/handle:basic_handle/wrap/magebloom_fiber\":0}",
+      "text": "ars_armiger.page.tetra_weapons.page2.body",
+      "title": "ars_armiger.page.tetra_weapons.page2.title"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tetra:modular_sword{\"sword/basic_blade_material\":\"basic_blade/source_gem\",\"sword/basic_hilt_material\":\"basic_hilt/stick\",\"sword/blade\":\"sword/basic_blade\",\"sword/decorative_pommel\":\"decorative_pommel/gold\",\"sword/guard\":\"sword/makeshift_guard\",\"sword/hilt\":\"sword/basic_hilt\",\"sword/makeshift_guard_material\":\"makeshift_guard/gold\",\"sword/pommel\":\"sword/decorative_pommel\",\"sword/blade:spellstrike\":1}",
+      "text": "ars_armiger.page.tetra_weapons.page3.body",
+      "title": "ars_armiger.page.tetra_weapons.page3.title"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ars_armiger.page.tetra_weapons.page4.body"
+    }
+  ]
+}

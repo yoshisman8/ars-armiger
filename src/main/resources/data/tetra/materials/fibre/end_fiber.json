@@ -5,30 +5,30 @@
             "modid": "ars_nouveau"
         }
     ],
-    "key": "magebloom_fiber",
+    "key": "end_fiber",
     "category": "fibre",
-    "primary": 6,
-    "secondary": 3,
-    "tertiary": 3,
-    "durability": 265,
+    "primary": 7,
+    "secondary": 4,
+    "tertiary": 4,
+    "durability": 290,
     "integrityCost": 2,
-    "integrityGain": 5,
-    "magicCapacity": 124,
+    "integrityGain": 4,
+    "magicCapacity": 143,
     "toolLevel": "minecraft:iron",
     "toolEfficiency": 5,
     "tints": {
-        "glyph": "dc65fc",
-        "texture": "f683fc"
+        "glyph": "6d3a7a",
+        "texture": "6d3a7a"
     },
     "textures": [
         "crude",
         "default"
     ],
     "material": {
-        "items": [ "ars_nouveau:magebloom_fiber" ]
+        "items": [ "ars_nouveau:end_fiber" ]
     },
     "effects": {
-        "source_leech": 2
+        "source_leech": 6
     },
     "requiredTools": {
         "cut": "minecraft:stone"

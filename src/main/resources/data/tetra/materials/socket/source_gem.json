@@ -1,4 +1,10 @@
 {
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "ars_nouveau"
+        }
+    ],
     "key": "socket_source_gem",
     "hidden": true,
     "category": "socket",
@@ -11,7 +17,7 @@
     "magicCapacity": -25,
     "toolLevel": 0,
     "effects": {
-        "source_leech": 2,
+        "source_leech": 5,
         "spellstrike": 1
     },
     "tints": {

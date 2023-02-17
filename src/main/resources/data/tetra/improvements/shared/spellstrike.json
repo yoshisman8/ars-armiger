@@ -1,0 +1,26 @@
+[
+  {
+    "key": "spellstrike",
+    "level": 1,
+    "integrity": -2,
+    "effects": {
+      "spellstrike": 1
+    }
+  },
+  {
+    "key": "spellstrike",
+    "level": 2,
+    "integrity": -3,
+    "effects": {
+      "spellstrike": 2
+    }
+  },
+  {
+    "key": "spellstrike",
+    "level": 3,
+    "integrity": -4,
+    "effects": {
+      "spellstrike": 3
+    }
+  }
+]
