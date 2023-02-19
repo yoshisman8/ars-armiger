@@ -17,8 +17,7 @@
     "magicCapacity": -25,
     "toolLevel": 0,
     "effects": {
-        "source_leech": 5,
-        "spellstrike": 1
+        "source_leech": 5
     },
     "tints": {
         "glyph": "bd9cf6",

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "air_attunement",
+    "level": 1,
+    "integrity": -1,
+    "effects": {
+      "air_attunement": 1
+    }
+  },
+  {
+    "key": "air_attunement",
+    "level": 2,
+    "integrity": -2,
+    "effects": {
+      "air_attunement": 2
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "replace":true,
+  "slots":[
+    "double/binding"
+  ],
+  "materialSlotCount":1,
+  "displayType":"minor",
+  "glyph":{
+    "textureLocation": "tetra:textures/gui/ars_glyphs.png",
+    "textureX":0,
+    "textureY":16
+  },
+  "outcomes":[
+    {
+      "materials":[
+        "tetra:focus/"
+      ],
+      "moduleKey":"double/focus",
+      "moduleVariant":"double_focus/",
+      "experienceFactor":1
+    }
+  ]
+}

@@ -24,6 +24,16 @@
     {
       "type": "patchouli:text",
       "text": "ars_armiger.page.tetra_weapons.page4.body"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tetra:modular_single{\"single/basic_handle_material\":\"basic_handle/archwood\",\"single/binding\":\"single/focus\",\"single/focus_material\":\"single_focus/focus_earth\",\"single/handle\":\"single/basic_handle\",\"single/head\":\"single/spearhead\",\"single/spearhead_material\":\"spearhead/source_gem\",\"single/handle:single_handle/wrap\":0,\"ars_nouveau:caster\":{\"is_hidden\":false,\"current_slot\":0,\"spell_count\":1,\"flavor\":\"\",\"hidden_recipe\":\"\",\"spells\":{\"spell0\":{\"name\":\"\",\"recipe\":{\"size\":3,\"part0\":\"ars_nouveau:glyph_touch\",\"part1\":\"ars_nouveau:glyph_harm\",\"part2\":\"ars_nouveau:glyph_ignite\"},\"sound\":{\"pitch\":1,\"volume\":1,\"soudTag\":\"\"},\"spellColor\":{\"b\":180,\"g\":25,\"r\":255}}}}}",
+      "text": "ars_armiger.page.tetra_weapons.page5.body",
+      "title": "ars_armiger.page.tetra_weapons.page5.title"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ars_armiger.page.tetra_weapons.page6.body"
     }
   ]
 }

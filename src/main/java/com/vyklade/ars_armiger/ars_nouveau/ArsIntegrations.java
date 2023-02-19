@@ -7,6 +7,7 @@ import com.hollingsworth.arsnouveau.common.spell.augment.AugmentAmplify;
 import com.hollingsworth.arsnouveau.common.spell.method.MethodTouch;
 import com.hollingsworth.arsnouveau.common.util.PortUtil;
 import com.vyklade.ars_armiger.ArsArmiger;
+import com.vyklade.ars_armiger.tetra.TetraEventHandler;
 import com.vyklade.ars_armiger.tetra.TetraIntegrations;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -22,6 +23,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
 import se.mickelus.tetra.items.modular.ModularItem;
 
+import javax.sound.sampled.Port;
 import java.util.List;
 @Mod.EventBusSubscriber(modid = ArsArmiger.MODID)
 public class ArsIntegrations {
@@ -43,12 +45,22 @@ public class ArsIntegrations {
             if(item.hasTag()) {
                 MutableComponent inscribeable = Component.translatable("tetra.tooltips.inscribable");
                 if(item.getTag().contains("ars_nouveau:caster")) {
-                    SpellCaster caster = new SpellCaster(item);
+                    SpellCaster caster = new BasicReductionCaster(item,(spell -> { spell.addDiscount(MethodTouch.INSTANCE.getCastingCost()); return  spell;}));
                     Spell spell = caster.getSpell();
-                    List<AbstractSpellPart> parts = spell.recipe;
-                    if(spellstriker > 1) parts.add(AugmentAmplify.INSTANCE);
-                    if(spellstriker > 2) parts.add(AugmentAmplify.INSTANCE);
-                    spell.recipe = parts;
+                    if(spellstriker > 1) spell.add(AugmentAmplify.INSTANCE);
+                    int air = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.AirAttunement);
+                    int earth = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.EarthAttunement);
+                    int fire = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.FireAttunement);
+                    int water = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.WaterAttunement);
+                    if(air > 0)
+                        TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_AIR, air >= 2);
+                    else if (earth > 0)
+                       TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_EARTH, earth >= 2);
+                    else if (fire > 0)
+                        TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_FIRE, fire >= 2);
+                    else if (water > 0)
+                        TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_WATER, water >= 2);
+
                     if(spell.isEmpty()) {
                         tooltip.add(inscribeable);
                     }
@@ -94,6 +106,13 @@ public class ArsIntegrations {
         ISpellCaster caster = CasterUtil.getCaster(item);
         Spell spell = caster.getSpell();
         SpellCaster itemCaster = new SpellCaster(tableItem);
+
+        if(spell.isEmpty()) {
+            itemCaster.setSpell(spell);
+            PortUtil.sendMessageNoSpam(player, Component.translatable("ars_armiger.spellstrike.cleared"));
+            event.setCanceled(true);
+            return;
+        }
 
         List<AbstractSpellPart> parts = spell.recipe;
 

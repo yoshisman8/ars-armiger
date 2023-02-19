@@ -1,0 +1,34 @@
+{
+  "replace":true,
+  "slots":[
+    "sword/fuller"
+  ],
+  "type":"tetra:basic_module",
+  "renderLayer":"highest",
+  "variants":[
+    {
+      "materials":[
+        "tetra:focus/"
+      ],
+      "key":"sword_focus/",
+      "extract":{
+        "durability":1,
+        "integrity":-1,
+        "glyph":{
+          "textureLocation": "tetra:textures/gui/ars_glyphs.png",
+          "textureX":0,
+          "textureY":16
+        },
+        "availableTextures":[
+          "default",
+          "greater"
+        ],
+        "models":[
+          {
+            "location":"tetra:items/module/sword/fuller/focus/"
+          }
+        ]
+      }
+    }
+  ]
+}
