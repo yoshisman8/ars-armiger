@@ -2,7 +2,10 @@ package com.vyklade.ars_armiger;
 
 import com.vyklade.ars_armiger.registry.ModRegistry;
 import com.vyklade.ars_armiger.tetra.TetraIntegrations;
+import jdk.jshell.EvalException;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,13 +37,12 @@ public class ArsArmiger
         return new ResourceLocation(MODID, path);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        TetraIntegrations.RegisterNewBars();
+    private void setup(final FMLCommonSetupEvent event) {
+
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        TetraIntegrations.RegisterNewBars();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
