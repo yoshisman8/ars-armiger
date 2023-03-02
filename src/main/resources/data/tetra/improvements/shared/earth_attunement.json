@@ -2,7 +2,7 @@
   {
     "key": "earth_attunement",
     "level": 1,
-    "integrity": -1,
+    "integrity": 0,
     "effects": {
       "earth_attunement": 1
     }
@@ -10,7 +10,7 @@
   {
     "key": "earth_attunement",
     "level": 2,
-    "integrity": -2,
+    "integrity": -1,
     "effects": {
       "earth_attunement": 2
     }

@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ars_nouveau"
+    }
+  ],
+  "key": "focus_fire",
+  "hidden": true,
+  "category": "focus",
+  "primary": 0,
+  "secondary": 0,
+  "tertiary": 0,
+  "durability": 0,
+  "toolLevel": 0,
+  "effects": {
+    "spellstrike": 1,
+    "fire_attunement": 1,
+    "spellstrike_duration": [5, 5],
+    "spellstrike_efficiency": [1,1],
+    "spellstrike_power": 0
+  },
+  "aspects": {
+    "fire_attuned": 1
+  },
+  "tints": {
+    "glyph": "f04000",
+    "texture": "f04000"
+  },
+  "textures": ["default"],
+  "experienceCost": 2,
+  "material": {
+    "items": ["ars_nouveau:fire_essence"]
+  }
+}

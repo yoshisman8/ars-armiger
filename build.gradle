@@ -169,7 +169,7 @@ dependencies {
 
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
-    implementation fg.deobf("curse.maven:tetra-289712:4370833")
+    implementation fg.deobf("curse.maven:tetra-289712:4414851")
     implementation fg.deobf("curse.maven:mutil-351914:3941314")
 }
 

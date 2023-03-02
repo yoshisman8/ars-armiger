@@ -2,7 +2,7 @@
   {
     "key": "water_attunement",
     "level": 1,
-    "integrity": -1,
+    "integrity": 0,
     "effects": {
       "water_attunement": 1
     }

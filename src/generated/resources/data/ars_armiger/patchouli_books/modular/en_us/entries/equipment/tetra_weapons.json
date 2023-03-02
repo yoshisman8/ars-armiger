@@ -11,13 +11,13 @@
     },
     {
       "type": "patchouli:spotlight",
-      "item": "tetra:modular_double{\"double/adze_left_material\":\"adze/source_gem\",\"double/basic_handle_material\":\"basic_handle/archwood\",\"double/binding\":\"double/binding\",\"double/binding_material\":\"double_binding/blaze_fiber\",\"double/butt_right_material\":\"butt/source_gem\",\"double/handle\":\"double/basic_handle\",\"double/head_left\":\"double/adze_left\",\"double/head_right\":\"double/butt_right\",\"double/handle:basic_handle/wrap/magebloom_fiber\":0}",
+      "item": "tetra:modular_sword{\"sword/hilt:hilt/wrap/end_fiber\":0,\"sword/basic_blade_material\":\"basic_blade/source_gem\",\"sword/basic_hilt_material\":\"basic_hilt/archwood\",\"sword/binding_material\":\"sword_binding/blaze_fiber\",\"sword/blade\":\"sword/basic_blade\",\"sword/decorative_pommel_material\":\"decorative_pommel/diamond\",\"sword/guard\":\"sword/binding\",\"sword/hilt\":\"sword/basic_hilt\",\"sword/pommel\":\"sword/decorative_pommel\"}",
       "text": "ars_armiger.page.tetra_weapons.page2.body",
       "title": "ars_armiger.page.tetra_weapons.page2.title"
     },
     {
       "type": "patchouli:spotlight",
-      "item": "tetra:modular_sword{\"sword/basic_blade_material\":\"basic_blade/source_gem\",\"sword/basic_hilt_material\":\"basic_hilt/stick\",\"sword/blade\":\"sword/basic_blade\",\"sword/decorative_pommel\":\"decorative_pommel/gold\",\"sword/guard\":\"sword/makeshift_guard\",\"sword/hilt\":\"sword/basic_hilt\",\"sword/makeshift_guard_material\":\"makeshift_guard/gold\",\"sword/pommel\":\"sword/decorative_pommel\",\"sword/blade:spellstrike\":1}",
+      "item": "tetra:modular_single{\"single/head:single/spellstrikefocus_arcane\":0,\"single/handle\":\"single/long_handle\",\"single/head\":\"single/spearhead\",\"single/long_handle_material\":\"long_handle/archwood\",\"single/spearhead_material\":\"spearhead/gold\"}",
       "text": "ars_armiger.page.tetra_weapons.page3.body",
       "title": "ars_armiger.page.tetra_weapons.page3.title"
     },
@@ -27,13 +27,15 @@
     },
     {
       "type": "patchouli:spotlight",
-      "item": "tetra:modular_single{\"single/basic_handle_material\":\"basic_handle/archwood\",\"single/binding\":\"single/focus\",\"single/focus_material\":\"single_focus/focus_earth\",\"single/handle\":\"single/basic_handle\",\"single/head\":\"single/spearhead\",\"single/spearhead_material\":\"spearhead/source_gem\",\"single/handle:single_handle/wrap\":0,\"ars_nouveau:caster\":{\"is_hidden\":false,\"current_slot\":0,\"spell_count\":1,\"flavor\":\"\",\"hidden_recipe\":\"\",\"spells\":{\"spell0\":{\"name\":\"\",\"recipe\":{\"size\":3,\"part0\":\"ars_nouveau:glyph_touch\",\"part1\":\"ars_nouveau:glyph_harm\",\"part2\":\"ars_nouveau:glyph_ignite\"},\"sound\":{\"pitch\":1,\"volume\":1,\"soudTag\":\"\"},\"spellColor\":{\"b\":180,\"g\":25,\"r\":255}}}}}",
+      "item": "tetra:modular_double{\"double/head_right:double/spellstrikefocus_fire\":0,\"double/adze_left_material\":\"adze/gold\",\"double/basic_handle_material\":\"basic_handle/stick\",\"double/butt_right_material\":\"butt/iron\",\"double/handle\":\"double/basic_handle\",\"double/head_left\":\"double/adze_left\",\"double/head_right\":\"double/butt_right\",\"ars_nouveau:caster\":{\"is_hidden\":0,\"current_slot\":0,\"spell_count\":1,\"flavor\":\"\",\"hidden_redipe\":\"\",\"spells\":{\"spell0\":{\"name\":\"\",\"recipe\":{\"size\":3,\"part0\":\"ars_nouveau:glyph_touch\",\"part1\":\"ars_nouveau:glyph_ignite\",\"part2\":\"ars_nouveau:glyph_freeze\"},\"sound\":{\"pitch\":1.0,\"volume\":1.0,\"soundTag\":{}},\"spellColor\":{\"b\":180,\"g\":25,\"r\":255}}}}}",
       "text": "ars_armiger.page.tetra_weapons.page5.body",
       "title": "ars_armiger.page.tetra_weapons.page5.title"
     },
     {
-      "type": "patchouli:text",
-      "text": "ars_armiger.page.tetra_weapons.page6.body"
+      "type": "patchouli:spotlight",
+      "item": "tetra:modular_shield{\"shield/plate:shield/studs/iron\":0,\"shield/plate:shield/trim/iron\":0,\"shield/plate:spellguard\":1,\"shield/basic_grip_material\":\"basic_grip/netherite\",\"shield/boss\":\"shield/sturdy_boss\",\"shield/grip\":\"shield/basic_grip\",\"shield/plate\":\"shield/tower\",\"shield/sturdy_boss_material\":\"sturdy_boss/gold\",\"shield/tower_material\":\"tower/oak\"}",
+      "text": "ars_armiger.page.tetra_weapons.page6.body",
+      "title": "ars_armiger.page.tetra_weapons.page6.title"
     }
   ]
 }

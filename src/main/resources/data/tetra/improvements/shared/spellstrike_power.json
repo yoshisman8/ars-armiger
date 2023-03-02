@@ -1,0 +1,34 @@
+[
+  {
+    "key": "spellstrike_power",
+    "level": 1,
+    "integrity": -1,
+    "effects": {
+      "spellstrike_power": 1
+    }
+  },
+  {
+    "key": "spellstrike_power",
+    "level": 2,
+    "integrity": -1,
+    "effects": {
+      "spellstrike_power": 2
+    }
+  },
+  {
+    "key": "spellstrike_power",
+    "level": 3,
+    "integrity": -2,
+    "effects": {
+      "spellstrike_power": 3
+    }
+  },
+  {
+    "key": "spellstrike_power",
+    "level": 4,
+    "integrity": -2,
+    "effects": {
+      "spellstrike_power": 4
+    }
+  }
+]

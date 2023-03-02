@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ars_nouveau"
+    }
+  ],
+  "key": "focus_water",
+  "hidden": true,
+  "category": "focus",
+  "primary": 0,
+  "secondary": 0,
+  "tertiary": 0,
+  "durability": 0,
+  "toolLevel": 0,
+  "effects": {
+    "spellstrike": 1,
+    "water_attunement": 1,
+    "spellstrike_duration": [5, 5],
+    "spellstrike_efficiency": [1,1],
+    "spellstrike_power": 0
+  },
+  "aspects": {
+    "water_attuned": 1
+  },
+  "tints": {
+    "glyph": "2799db",
+    "texture": "2799db"
+  },
+  "textures": ["default"],
+  "experienceCost": 2,
+  "material": {
+    "items": ["ars_nouveau:water_essence"]
+  }
+}

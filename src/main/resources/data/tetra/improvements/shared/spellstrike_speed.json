@@ -1,0 +1,34 @@
+[
+  {
+    "key": "spellstrike_speed",
+    "level": 1,
+    "integrity": -1,
+    "effects": {
+      "spellstrike_duration": [-0.75, -0.75]
+    }
+  },
+  {
+    "key": "spellstrike_speed",
+    "level": 2,
+    "integrity": -1,
+    "effects": {
+      "spellstrike_duration": [-1.5, -1.5]
+    }
+  },
+  {
+    "key": "spellstrike_speed",
+    "level": 3,
+    "integrity": -2,
+    "effects": {
+      "spellstrike_duration": [-2.25, -2.25]
+    }
+  },
+  {
+    "key": "spellstrike_power",
+    "level": 4,
+    "integrity": -2,
+    "effects": {
+      "spellstrike_duration": [-3, -3]
+    }
+  }
+]

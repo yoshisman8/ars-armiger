@@ -1,0 +1,30 @@
+{
+  "replace":true,
+  "slots":[
+    "shield/plate"
+  ],
+  "materialSlotCount":0,
+  "displayType":"improvement",
+  "requirement":{
+    "type":"tetra:not",
+    "requirement":{
+      "type":"tetra:improvement",
+      "improvement":"spellguard"
+    }
+  },
+  "glyph":{
+    "textureLocation": "tetra:textures/gui/ars_glyphs.png",
+    "textureX":0,
+    "textureY":240
+  },
+  "outcomes":[
+    {
+      "requiredTools":{
+        "hammer_dig":"minecraft:stone"
+      },
+      "improvements":{
+        "spellguard": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "replace":true,
+  "slots":[
+    "double/head_right",
+    "single/head",
+    "sword/blade"
+  ],
+  "materialSlotCount":0,
+  "hone":true,
+  "rarity":"hone",
+  "displayType":"improvement",
+  "requirement":{
+    "type": "tetra:improvement",
+    "improvement": "spellstrike_power",
+    "level": 2
+  },
+  "outcomes":[
+    {
+      "requiredTools":{
+        "hammer_dig":"minecraft:diamond"
+      },
+      "improvements":{
+        "spellstrike_power":3
+      }
+    }
+  ]
+}

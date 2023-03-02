@@ -1,0 +1,22 @@
+[
+  {
+    "materials": ["tetra:focus/"],
+    "key": "sword/spellstrike",
+    "level": 0,
+    "extract":{
+      "durability": -10,
+      "glyph":{
+        "textureLocation": "tetra:textures/gui/ars_glyphs.png",
+        "textureX":0,
+        "textureY":16
+      },
+      "availableTextures": ["default"],
+      "renderLayer": "highest",
+      "models": [
+        {
+          "location": "tetra:items/module/sword/shared/"
+        }
+      ]
+    }
+  }
+]

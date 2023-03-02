@@ -1,0 +1,59 @@
+{
+  "replace": true,
+  "slots":[
+    "double/head_right"
+  ],
+  "keySuffixes": [ "_right" ],
+  "materialSlotCount": 1,
+  "displayType": "improvement",
+  "requirement": {
+    "type": "tetra:not",
+    "requirement": {
+      "type": "tetra:or",
+      "requirements": [
+        {
+          "type": "tetra:improvement",
+          "improvement": "double/spellstrikefocus_arcane"
+        },
+        {
+          "type": "tetra:improvement",
+          "improvement": "double/spellstrikefocus_air"
+        },
+        {
+          "type": "tetra:improvement",
+          "improvement": "double/spellstrikefocus_earth"
+        },
+        {
+          "type": "tetra:improvement",
+          "improvement": "double/spellstrikefocus_fire"
+        },
+        {
+          "type": "tetra:improvement",
+          "improvement": "spellstrikefocus_water"
+        }
+      ]
+    }
+  },
+  "glyph":{
+    "textureLocation": "tetra:textures/gui/ars_glyphs.png",
+    "textureX":28,
+    "textureY":242
+  },
+  "translation":{
+    "integrity":-2,
+    "magicCapacity":-25
+  },
+  "outcomes":[
+    {
+      "requiredTools":{
+        "hammer_dig":"minecraft:iron"
+      },
+      "materials":[
+        "tetra:focus/"
+      ],
+      "improvements": {
+        "double/spellstrike": 0
+      }
+    }
+  ]
+}

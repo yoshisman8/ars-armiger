@@ -1,0 +1,101 @@
+{
+  "replace":true,
+  "slots":[
+    "double/head_right",
+    "single/head",
+    "sword/blade"
+  ],
+  "materialSlotCount":0,
+  "hone":true,
+  "rarity":"hone",
+  "displayType":"improvement",
+  "requirement":{
+    "type":"tetra:and",
+    "requirements":[
+      {
+        "type": "tetra:or",
+        "requirements": [
+          {
+            "type": "tetra:improvement",
+            "improvement": "double/spellstrikefocus_arcane"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "double/spellstrikefocus_air"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "double/spellstrikefocus_earth"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "double/spellstrikefocus_fire"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "double/spellstrikefocus_water"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "single/spellstrikefocus_arcane"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "single/spellstrikefocus_air"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "single/spellstrikefocus_earth"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "single/spellstrikefocus_fire"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "single/spellstrikefocus_water"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "sword/spellstrikefocus_arcane"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "sword/spellstrikefocus_air"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "sword/spellstrikefocus_earth"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "sword/spellstrikefocus_fire"
+          },
+          {
+            "type": "tetra:improvement",
+            "improvement": "sword/spellstrikefocus_water"
+          }
+        ]
+      },
+      {
+        "type": "tetra:not",
+        "requirement": {
+          "type": "tetra:improvement",
+          "improvement": "spellstrike_speed",
+          "level": 1
+        }
+      }
+    ]
+
+  },
+  "outcomes":[
+    {
+      "requiredTools":{
+        "hammer_dig":"minecraft:iron"
+      },
+      "improvements":{
+        "spellstrike_speed":1
+      }
+    }
+  ]
+}

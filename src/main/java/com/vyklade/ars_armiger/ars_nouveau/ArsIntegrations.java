@@ -21,6 +21,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
+import se.mickelus.tetra.effect.ItemEffect;
 import se.mickelus.tetra.items.modular.ModularItem;
 
 import javax.sound.sampled.Port;
@@ -35,23 +36,27 @@ public class ArsIntegrations {
         if(!(item.getItem() instanceof ModularItem)) return;
         List<Component> tooltip = event.getToolTip();
 
-        int spellstriker = ((ModularItem)item.getItem()).getEffectLevel(item, TetraIntegrations.Spellstrike);
-        int sourceLeecch = ((ModularItem)item.getItem()).getEffectLevel(item, TetraIntegrations.SourceLeech);
+        int spellstriker = ((ModularItem)item.getItem()).getEffectLevel(item, ItemEffect.get("spellstrike"));
+        int sourceLeecch = ((ModularItem)item.getItem()).getEffectLevel(item, ItemEffect.get("source_leech"));
+        int spellguard = ((ModularItem)item.getItem()).getEffectLevel(item, ItemEffect.get("spellguard"));
+
         if(sourceLeecch > 0){
             MutableComponent leech = Component.translatable("tetra.tooltips.leech", sourceLeecch);
             tooltip.add(leech);
         }
-        if(spellstriker > 0) {
+        if(spellstriker > 0 || spellguard > 0) {
             if(item.hasTag()) {
                 MutableComponent inscribeable = Component.translatable("tetra.tooltips.inscribable");
                 if(item.getTag().contains("ars_nouveau:caster")) {
+                    int power = ((ModularItem) item.getItem()).getEffectLevel(item, ItemEffect.get("spellstrike_power"));
+
                     SpellCaster caster = new BasicReductionCaster(item,(spell -> { spell.addDiscount(MethodTouch.INSTANCE.getCastingCost()); return  spell;}));
                     Spell spell = caster.getSpell();
-                    if(spellstriker > 1) spell.add(AugmentAmplify.INSTANCE);
-                    int air = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.AirAttunement);
-                    int earth = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.EarthAttunement);
-                    int fire = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.FireAttunement);
-                    int water = ((ModularItem) item.getItem()).getEffectLevel(item, TetraIntegrations.WaterAttunement);
+
+                    int air = ((ModularItem) item.getItem()).getEffectLevel(item, ItemEffect.get("air_attunement"));
+                    int earth = ((ModularItem) item.getItem()).getEffectLevel(item, ItemEffect.get("earth_attunement"));
+                    int fire = ((ModularItem) item.getItem()).getEffectLevel(item, ItemEffect.get("fire_attunement"));
+                    int water = ((ModularItem) item.getItem()).getEffectLevel(item, ItemEffect.get("water_attunement"));
                     if(air > 0)
                         TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_AIR, air >= 2);
                     else if (earth > 0)
@@ -60,6 +65,8 @@ public class ArsIntegrations {
                         TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_FIRE, fire >= 2);
                     else if (water > 0)
                         TetraEventHandler.Amplify(spell,SpellSchools.ELEMENTAL_WATER, water >= 2);
+
+                    if(power > 0) TetraEventHandler.Power(spell, power);
 
                     if(spell.isEmpty()) {
                         tooltip.add(inscribeable);
@@ -100,8 +107,9 @@ public class ArsIntegrations {
 
         if(!(tableItem.getItem() instanceof ModularItem)) return;
 
-        int spellstrike = ((ModularItem)tableItem.getItem()).getEffectLevel(tableItem, TetraIntegrations.Spellstrike);
-        if(spellstrike == 0) return;
+        int spellstrike = ((ModularItem)tableItem.getItem()).getEffectLevel(tableItem, ItemEffect.get("spellstrike"));
+        int spellguard = ((ModularItem)tableItem.getItem()).getEffectLevel(tableItem, ItemEffect.get("spellguard"));
+        if(spellstrike == 0 && spellguard == 0) return;
 
         ISpellCaster caster = CasterUtil.getCaster(item);
         Spell spell = caster.getSpell();
